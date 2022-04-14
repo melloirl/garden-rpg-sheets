@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="character-info">
+            <div class="profile">
+                <div id = "profile-image">
+                </div>
+                <div class="natures">
+                    <object data="/assets/elements/water-icon.svg" width="50" class="water"></object>
+                    <object data="/assets/elements/snow-icon.svg" width="50" class="snow"></object>
+                </div>
+                <p id = "name">Kato Hayashii<p>
+                    <object data="/assets/columndivider.svg" width="300"  ></object>
+            </div>
+            <div class="character-status">
+                <ul>
+                    <li><canvas id="lifebar"></canvas></li>
+                    <li><canvas id = "manabar"></canvas></li>
+                    <li><canvas id="energybar"></canvas></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+            <div class = "skills">
+                <a class="tableTitle">Habilidades</a>
+                <table class = "skill-table">
+                    <tr>
+                        <th class = "nameColumn">Nome</th>
+                        <th class = "costColumn">Custo</th>
+                        <th class = "descriptionColumn">Descrição</th>
+                    </tr>
+                    <tr>
+                        <td class="textTitle">Inverno</td>
+                        <td>Passiva</td>
+                        <td>Todos os feitiços conjurados causam lentidão ao inimigo, fazendo com que perca -3 de destreza por um único turno.</td>
+                    </tr>
+                    <tr>
+                        <td class = "textTitle">Gelo Arsenal</td>
+                        <td>150 <a class="mana">mana</a>/espinho</td>
+                        <td>Forma espinhos de gelo no local escolhido (alcance máximo de 150 metros). Cada espinho que atingir causa 150 de dano.</td>
+                    </tr>
+                    <tr>
+                        <td class = "textTitle">Esculpir</td>
+                        <td>X <a class="mana">mana</a></td>
+                        <td>Ergue gelo esculpido da forma desejada. Sua durabilidade é determinada pela quantidade de mana utilizada. HP = Custo</td>
+                    </tr>
+                    <tr>
+                        <td class = "textTitle">Nevasca</td>
+                        <td>1300 <a class="mana">mana</a></td>
+                        <td>Gera uma área de nevasca com epicentro a partir da posição do usuário, que não pode se mover enquanto conjura. Causa dano exponencial.</td>
+                    </tr>
+                    <tr>
+                        <td class = "textTitle">Núcleo Frio</td>
+                        <td>30% vida/level</td>
+                        <td>Congela por uma quantidade de tempo proporcional à vida gasta. Ao sacrificar 90% de sua vida e toda sua mana pode congelar algo para sempre.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+<script type="text/javascript" src="bar.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

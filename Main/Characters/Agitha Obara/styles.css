@@ -1,14 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 @media (max-width: 800px) {
+  .container{
+    max-width: 350px;
+  }
   .bodycontainer {
     flex-direction: column;
-    justify-content: center;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   body {
     display: flex;
     justify-content: center;
+  }
+
+  td {
+    display: table-row;
+  }
+  th{
+    display: none;
   }
 }
 

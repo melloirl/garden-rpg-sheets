@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1" />
+  <title>Template Sheet</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png"/>
+</head>
+
+<body>
+  <div class="bodycontainer">
+    <div class="container">
+      <div class="character-info">
+        <div class="profile">
+          <p class="name">Milles Grey</p>
+          <div class="divider">
+            <object data="../assets/columndivider2.svg"></object>
+          </div>
+          <div id="profile-image"></div>
+          <div class="natures">
+            <object data="../assets/elements/ligthning-icon.svg" width="30" class="ligthning"></object>
+          </div>
+        </div>
+
+        <div class="lore-info">
+          <p class="text-title">Idade
+          <p class="lore-text">23</p>
+          </p>
+          <p class="text-title">Origem
+          <p class="lore-text">Império Daeliseano</p>
+          </p>
+          <p class="text-title">Classe
+          <p class="lore-text">Cavaleiro Mágico</p>
+          </p>
+          <p class="text-title">Raça
+          <p class="lore-text">Descendente</p>
+          </p>
+        </div>
+
+        <div class="character-status">
+          <div class="bars">
+            <canvas id="life-bar" width="246" height="33"></canvas>
+            <canvas id="mana-bar" width="246" height="33"></canvas>
+            <canvas id="energy-bar" width="246" height="33"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="skills">
+        <a class="name" id="skill-title">Habilidades</a>
+        <table class="skill-table">
+          <tr>
+            <th class="name-column">Nome</th>
+            <th class="cost-column">Custo</th>
+            <th class="description-column">Descrição</th>
+          </tr>
+          <tr>
+            <td class="text-title">Zeus</td>
+            <td>500 <a class="mana">mana</a></td>
+            <td>
+              Materializa uma lança de raios, lançando-a em direção ao inimigo.
+              Ao atingir o alvo a lança causa 350 de dano elétrico em área.
+            </td>
+          </tr>
+          <tr>
+            <td class="text-title">Insurgência</td>
+            <td>500 <a class="mana">mana</a></td>
+            <td>
+              Assume momentaneamente uma forma elemental tornando-se raios para
+              se teleportar de posição num raio de 10 metros. Duas chances de
+              reação.
+            </td>
+          </tr>
+          <tr>
+            <td class="text-title">Campo Estático</td>
+            <td>100 <a class="mana">mana</a></td>
+            <td>
+              Gera um campo elétrico onde pode conjurar insurgência livremente.
+              Todos os seus ataques dentro do campo elétrico causam dano
+              colateral em área.
+            </td>
+          </tr>
+          <tr>
+            <td class="text-title">Sabre</td>
+            <td>1000 <a class="mana">mana</a></td>
+            <td>
+              Ataque concentrado com a espada, produzindo um feixe de energia
+              massivo cortante em linha reta. Causa 650 de dano a tudo que
+              estiver no caminho.
+            </td>
+          </tr>
+          <tr>
+            <td class="text-title">Usurpador</td>
+            <td>Passiva</td>
+            <td>
+              Sempre que Milles realizar um ataque com sucesso, 50% do dano
+              causado é convertido em vida e 50% é convertido em mana.
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="container">
+      <div class="character-info">
+        <div class="profile">
+          <p class="name">Atributos</p>
+          <div class="divider">
+            <object data="assets/columndivider2.svg"></object>
+          </div>
+          <div id="radar-chart">
+            <canvas id="my-chart" width="200"></canvas>
+            <script src="../node_modules/chart.js/dist/chart.js"></script>
+            <script src="radarchart.js"></script>
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="bar.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</div>
+
+</html>

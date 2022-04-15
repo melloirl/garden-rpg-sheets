@@ -24,8 +24,8 @@
 }
 
 :root {
-  --page-background: url(../assets/backgrounds/milles-background.jpg);
-  --profile-picture: url(../assets/profilepictures/milles-profilepicture.jpg);
+  --page-background: url(../../assets/backgrounds/milles-background.jpg);
+  --profile-picture: url(../../assets/profilepictures/milles-profilepicture.jpg);
 }
 
 

@@ -25,29 +25,51 @@ const data = {
 const config = {
   type: "radar",
   data: data,
+
   options: {
+    
     plugins: {
       legend: {
         display: false,
       },
     },
-    scale: {
+
+    /* scale: {
       min: 0,
       max: 12,
     },
+ */
     scales: {
       r: {
+        max:15,
+        min:0,
+
         pointLabels: {
           display: true,
+          font: {
+            size: 12,
+            weight: 'bold',
+          },
+          color:"#E6E6E6",
         },
         ticks: {
-          display: false,
+          stepSize: 5,
+          textStrokeColor: "blue",
+          color: '#E6E6E6',
+          backdropColor: 'rgba(0,0,0,0.0)',
+        },
+        angleLines:{
+          color: "#E6E6E6",
+        },
+        grid:{
+          color: "#E6E6E6",
         },
       },
     },
+
     elements: {
-      line: {
-        borderWidth: 5,
+      points: {
+        radius: 4,
       },
     },
   },

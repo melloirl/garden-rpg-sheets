@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-@media (max-width: 800px)
-{
-  .bodycontainer
-   {
+@media (max-width: 800px) {
+  .bodycontainer {
     flex-direction: column;
     justify-content: center;
-   }
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+:root {
+  --page-background: url(../assets/backgrounds/milles-background.jpg);
+  --profile-picture: url(../assets/profilepictures/milles-profilepicture.jpg);
 }
 
 
@@ -15,18 +23,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow:hidden;
 }
 
 html {
-
+  display: flex;
   font-family: "MedievalSharp", cursive;
   overflow: auto;
   height: auto;
   width: auto;
+  justify-content: space-around;
 }
 
 body {
-  background-image: url(../assets/backgrounds/milles-background.jpg);
+  background-image: var(--page-background);
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -34,17 +44,18 @@ body {
 }
 
 .character-info {
-  margin: 30px;
-  margin-left: 90px;
-  width: 350px;
-  height: 900px;
-  border-radius: 30px;
+  margin: 1.875rem;
+  /* margin-left: 5.625rem; */
+  width: 21.875rem;
+  height: 56.25rem;
+  border-radius: 1.875rem;
   background-color: rgba(0, 0, 0, 0.469);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   filter: drop-shadow(0 0 0.25rem rgba(92, 82, 239, 0.874));
+  overflow: visible;
 }
 
 .profile {
@@ -52,7 +63,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  overflow: visible;
 }
 
 .bars {
@@ -65,27 +76,29 @@ body {
 .name {
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 3.125rem;
+  line-height: 3.125rem;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
   color: rgb(122, 172, 228);
+  filter: drop-shadow(0 0 0.25rem rgba(92, 82, 239, 0.874));
+  overflow: visible;
 }
 
 #profile-image {
   border-radius: 50%;
-  width: 220px;
-  height: 220px;
-  background-image: url(../assets/profilepictures/milles-profilepicture.jpg);
+  width: 13.75rem;
+  height: 13.75rem;
+  background-image: var(--profile-picture);
   background-size: cover;
   /* filter: drop-shadow(0 0 0.5rem rgba(122, 172, 228, 1)); */
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 #divider {
-  max-width: 300px;
+  max-width: 18.75rem;
 }
 
 .character-status {
@@ -96,16 +109,16 @@ body {
 }
 
 .character-status canvas {
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
 .skills {
-  padding-top: 100px;
+  padding-top: 6.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  width: 37.5rem;
 }
 
 canvas:hover {
@@ -113,23 +126,28 @@ canvas:hover {
 }
 
 .container {
+  position: relative;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  width: 500px;
 }
 
 .text-title {
   font-weight: bolder !important;
+  overflow: visible;
 }
 
 .mana {
-  color: #78a2c9;
+  color: #280cff;
 }
 
 .skill-table tr th,
 .skill-table tr td {
-  border-right: 1px solid #bbb;
-  border-bottom: 1px solid #bbb;
-  padding: 5px;
+  border-right: 0.0625rem solid #bbb;
+  border-bottom: 0.0625rem solid #bbb;
+  padding: 0.3125rem;
 }
 
 .skill-table {
@@ -139,22 +157,29 @@ canvas:hover {
   width: 100%;
   text-align: center;
   table-layout: fixed;
-  background-color: #c4c4c4;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   font-family: "Roboto", sans-serif !important;
 }
 
 .name-column {
   width: 20%;
 }
+
 .cost-column {
   width: 20%;
 }
+
 .description-column {
   width: 60%;
 }
 
 .table-title {
-  font-size: 96px;
+  font-size: 6rem;
   color: #e6e6e6;
   text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
     0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
@@ -166,17 +191,16 @@ canvas:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 10px;
+  margin: 0.625rem;
   margin-top: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .ligthning {
-  filter: invert(87%) sepia(39%) saturate(762%) hue-rotate(333deg)
-    brightness(85%) contrast(94%) drop-shadow(0px 4px 4px rgba(0, 0, 0, 1));
+  filter: invert(87%) sepia(39%) saturate(762%) hue-rotate(333deg) brightness(85%) contrast(94%) drop-shadow(0px 4px 4px rgba(0, 0, 0, 1));
   border-radius: 50%;
-  border: 3px solid;
-  margin: 10px;
+  border: 0.1875rem solid;
+  margin: 0.625rem;
 }
 
 #radar-chart {
@@ -189,39 +213,50 @@ canvas:hover {
 }
 
 .divider {
-  margin: 15px;
-  filter: invert(84%) sepia(32%) saturate(4353%) hue-rotate(181deg)
-    brightness(93%) contrast(93%) drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.6));
+  margin: 0.9375rem;
+  filter: invert(84%) sepia(32%) saturate(4353%) hue-rotate(181deg) brightness(93%) contrast(93%) drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.6));
 }
 
-.lore-info p{
-    font-style: normal;
-    font-size: 25px;
-    line-height: 50px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: rgb(122, 172, 228);
+.lore-info p {
+  font-style: normal;
+  font-size: 1.5625rem;
+  line-height: 3.125rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgb(122, 172, 228);
 }
 
-.lore-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.lore-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
 }
 
-.lore-text{
-    color: rgb(255, 255, 255) !important;
+.lore-text {
+  color: rgb(255, 255, 255) !important;
 }
 
-.lore-info .text-title{
-    margin: 0;
-    padding: 0;
-    line-height: 12px   ;
+.lore-info .text-title {
+  margin: 0;
+  padding: 0;
+  line-height: 0.75rem;
 }
 
-.bodycontainer{
-    display: flex;
-    justify-content: center;
+.bodycontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.container:nth-child(2){
+
+  width: max-content;
+}
+
+#skill-title{
+  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black,
+    0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    margin-bottom: 25px;
 }

@@ -10,12 +10,12 @@ const data = {
   ],
   datasets: [
     {
-      data: [6, 10, 10, 6, 6, 10, 12],
+      data: [8, 10, 8, 2, 2, 8, 2],
       fill: true,
-      backgroundColor: "rgba(0, 133, 255, 0.3)",
-      borderColor: "#4379f7",
-      pointBackgroundColor: "#5b6ed9",
-      pointBorderColor: "#1b2b87",
+      backgroundColor: "rgba(255, 89, 0, 0.3)",
+      borderColor: "#ff8000",
+      pointBackgroundColor: "#ff4d00",
+      pointBorderColor: "#411900",
       pointHoverBackgroundColor: "#fff",
       pointHoverBorderColor: "rgb(255, 99, 132)",
     },

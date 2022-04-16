@@ -23,9 +23,9 @@ lifebar.width, manabar.width, (energybar.width = W);
 const profilepicture = document.getElementById("profile-image");
 
 //Informações do Personagem
-const maxHealth = 1400;
-const maxMana = 5500;
-const maxEnergy = 350;
+const maxHealth = 800;
+const maxMana = 8000;
+const maxEnergy = 200;
 
 let health = maxHealth;
 let mana = maxMana;

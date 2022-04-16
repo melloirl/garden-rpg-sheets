@@ -24,8 +24,8 @@
 }
 
 :root {
-  --page-background: url(../../assets/backgrounds/milles-background.jpg);
-  --profile-picture: url(../../assets/profilepictures/milles-profilepicture.jpg);
+  --page-background: url(../../assets/backgrounds/kamala-background2.jpg);
+  --profile-picture: url(../../assets/profilepictures/kamala-profilepicture.jpg);
 }
 
 
@@ -65,7 +65,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  filter: drop-shadow(0 0 0.25rem rgba(92, 82, 239, 0.874));
+  filter: drop-shadow(0 0 0.25rem rgba(239, 111, 82, 0.874));
   overflow: visible;
 }
 
@@ -93,8 +93,8 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
-  color: rgb(122, 172, 228);
-  filter: drop-shadow(0 0 0.25rem rgba(92, 82, 239, 0.874));
+  color: rgb(228, 168, 122);
+  filter: drop-shadow(0 0 0.25rem rgba(239, 111, 82, 0.874));
   overflow: visible;
 }
 
@@ -207,8 +207,8 @@ canvas:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.ligthning {
-  filter: invert(87%) sepia(39%) saturate(762%) hue-rotate(333deg) brightness(85%) contrast(94%) drop-shadow(0px 4px 4px rgba(0, 0, 0, 1));
+.fire {
+  filter: invert(58%) sepia(55%) saturate(2599%) hue-rotate(335deg) brightness(95%) contrast(90%) drop-shadow(0px 4px 4px rgba(0, 0, 0, 1));
   border-radius: 50%;
   border: 0.1875rem solid;
   margin: 0.625rem;
@@ -225,7 +225,7 @@ canvas:hover {
 
 .divider {
   margin: 0.9375rem;
-  filter: invert(84%) sepia(32%) saturate(4353%) hue-rotate(181deg) brightness(93%) contrast(93%) drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.6));
+  filter: invert(79%) sepia(19%) saturate(1166%) hue-rotate(331deg) brightness(92%) contrast(93%) drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.6));
 }
 
 .lore-info p {
@@ -235,7 +235,7 @@ canvas:hover {
   display: flex;
   align-items: center;
   text-align: center;
-  color: rgb(122, 172, 228);
+  color: rgb(228, 168, 122);
 }
 
 .lore-info {
